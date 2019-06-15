@@ -22,7 +22,7 @@ class Header extends React.Component {
     return regexp.test(String(url));
   };
 
-  /* Create the shrt URL */
+  /* Create the short URL */
 
   shortenUrl = async () => {
     /* Format check */
@@ -33,19 +33,31 @@ class Header extends React.Component {
       return;
     }
 
+    /* Request to create */
+
     try {
       await axios.post("https://short-url-back-nam.herokuapp.com/url/create", {
         url: this.state.url
       });
+
+      /* Set counter on parent to reload body component */
+
       this.props.setCounter();
       this.setState({ url: "" });
       return;
     } catch (error) {
+      /* Check if url already exist in API */
+
       if (error.response.status === 409) {
+        /* Set state to display error bubble for 2 sec */
+
         this.setState({ error: true, sameUrl: true });
         setTimeout(() => this.setState({ error: false, sameUrl: false }), 2000);
         return;
       }
+
+      /* Console log other errors */
+
       return console.log(error.message);
     }
   };

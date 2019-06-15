@@ -6,14 +6,12 @@ import RedirectPage from "../pages/RedirectPage";
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Router>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/:key" component={RedirectPage} />
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/:key" component={RedirectPage} />
+        </Switch>
+      </Router>
     );
   }
 }

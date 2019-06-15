@@ -35,7 +35,7 @@ class Body extends React.Component {
               );
             })
           ) : (
-            <div>Loading</div>
+            <div />
           )}
         </ul>
       </div>
