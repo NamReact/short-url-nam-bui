@@ -1,0 +1,41 @@
+.body-titles {
+  display: flex;
+  width: 85%;
+  margin: 100px auto 0 auto;
+  padding: 15px 23px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: rgb(120, 120, 120);
+  font-weight: 500;
+}
+
+.body-titles > div:nth-child(1),
+.body-titles > div:nth-child(2) {
+  flex: 2;
+}
+
+.body-titles > div:nth-child(3) {
+  flex: 0.3;
+}
+
+.gray {
+  background-color: rgb(245, 245, 245);
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: 0;
+  width: 85%;
+}
+
+.li {
+  width: 100%;
+  margin: 7px auto;
+  border-bottom: 2px solid lightgray;
+}
+
+a:visited {
+  color: blue;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
+import RedirectPage from "../pages/RedirectPage";
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
         <Router>
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/:key" component={RedirectPage} />
           </Switch>
         </Router>
       </div>

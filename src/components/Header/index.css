@@ -9,6 +9,7 @@
   margin: auto;
   padding: 50px 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 h1 {
@@ -45,7 +46,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(246, 246, 253);
+  background-color: white;
   height: 50px;
   padding: 0 30px;
   color: var(--purple);
@@ -54,4 +55,29 @@ input {
   box-sizing: border-box;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.header-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: var(--purple);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.header-arrow {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  left: 4px;
+  top: -5px;
+  transform: rotate(45deg);
 }
