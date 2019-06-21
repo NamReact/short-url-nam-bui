@@ -13,7 +13,7 @@
 
 ## General info
 
-A simple short URL website. I dont have a domain name so some URL might end up might longer.
+A simple short URL website. I dont have a domain name so some URLs might end up longer.
 
 This is only the front end. You can find the back end [here](https://github.com/NamReact/short-url-nam-bui-server)
 
