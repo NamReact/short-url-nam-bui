@@ -48,4 +48,4 @@ Project is _finished_.
 
 ## Inspiration
 
-Add here credits. Project inspired by websites like https://bitly.com/ and https://tiny.cc/.
+Project inspired by websites like https://bitly.com/ and https://tiny.cc/.
